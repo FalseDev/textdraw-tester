@@ -36,7 +36,7 @@ jobs:
         run: git submodule update --init --recursive
 
       - name: Build
-        run: cargo build ${{ matrix.mode }} -vv --target {{ matrix.target }}
+        run: cargo build ${{ matrix.mode }} -vv --target ${{ matrix.target }}
 
       - name: Build changelog
         if: startsWith(github.ref, 'refs/tags/')
