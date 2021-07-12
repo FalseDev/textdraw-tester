@@ -14,7 +14,7 @@ jobs:
         os: [ubuntu-latest]
         rust: [stable]
         mode: [--release]
-        target: [x86_64-unknown-linux-gnu]
+        target: [x86_64-unknown-linux-gnu, aarch64-unknown-linux-gnu]
 
     env:
       RUST_BACKTRACE: full
